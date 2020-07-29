@@ -1,0 +1,32 @@
+<script>
+
+    var ciudad1 = "Barcelona";
+    var ciudad2 = "Madrid";
+    var ciudad3 = "Valencia";
+    var ciudad4 = "Malaga";
+    var ciudad5 = "Cadiz";
+    var ciudad6 = "Santander";
+
+    var arrayCiudades = [ ciudad1, ciudad2, ciudad3, ciudad4, ciudad5, ciudad6 ];
+
+    for (let index = 0; index < arrayCiudades.length; index++)
+    {
+        for (let j = 0; j < arrayCiudades.length -1; j++) 
+        {
+            if (arrayCiudades[j].localeCompare(arrayCiudades[j + 1]) > 0)
+            {
+                var temp = arrayCiudades[j];
+                arrayCiudades[j] = arrayCiudades[j + 1];
+                arrayCiudades[j + 1] = temp;
+            }
+            
+        }    
+    }
+    console.log("Las Ciudades Ordenadas son:");
+
+    for (let index = 0; index < arrayCiudades.length; index++)
+    {
+        console.log(arrayCiudades[index]);
+        
+    }
+</script>

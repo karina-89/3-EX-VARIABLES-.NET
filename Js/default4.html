@@ -1,0 +1,70 @@
+<script>
+    var ciudad1 = "Barcelona";
+    var ciudad2 = "Madrid";
+    var ciudad3 = "Valencia";
+    var ciudad4 = "Malaga";
+    var ciudad5 = "Cadiz";
+    var ciudad6 = "Santander";
+
+    var ciudad1array = [];
+    var ciudad2array = [];
+    var ciudad3array = [];
+    var ciudad4array = [];
+    var ciudad5array = [];
+    var ciudad6array = [];
+
+    for (let i = 0; i < ciudad1.length; i++) {
+        ciudad1array[i] = ciudad1[i];
+    }
+    for (let i = 0; i < ciudad2.length; i++) {
+        ciudad2array[i] = ciudad2[i];
+    }
+    for (let i = 0; i < ciudad3.length; i++) {
+        ciudad3array[i] = ciudad3[i];
+    }
+    for (let i = 0; i < ciudad4.length; i++) {
+        ciudad4array[i] = ciudad4[i];
+    }
+    for (let i = 0; i < ciudad5.length; i++) {
+        ciudad5array[i] = ciudad5[i];
+    }
+    for (let i = 0; i < ciudad6.length; i++) {
+        ciudad6array[i] = ciudad6[i];
+    }
+
+    var ciudadInvertida = "";
+    for (let i = ciudad1array.length - 1; i >= 0; i--) {
+        ciudadInvertida = ciudadInvertida + ciudad1array[i];
+    }
+    console.log(ciudad1 + " --> " + ciudadInvertida);
+
+    ciudadInvertida = "";
+    for (let i = ciudad2array.length - 1; i >= 0; i--) {
+        ciudadInvertida = ciudadInvertida + ciudad2array[i];
+    }
+    console.log(ciudad2 + " --> " + ciudadInvertida);
+
+    ciudadInvertida = "";
+    for (let i = ciudad3array.length - 1; i >= 0; i--) {
+        ciudadInvertida = ciudadInvertida + ciudad3array[i];
+    }
+    console.log(ciudad3 + " --> " + ciudadInvertida);
+
+    ciudadInvertida = "";
+    for (let i = ciudad4array.length - 1; i >= 0; i--) {
+        ciudadInvertida = ciudadInvertida + ciudad4array[i];
+    }
+    console.log(ciudad4 + " --> " + ciudadInvertida);
+
+    ciudadInvertida = "";
+    for (let i = ciudad5array.length - 1; i >= 0; i--) {
+        ciudadInvertida = ciudadInvertida + ciudad5array[i];
+    }
+    console.log(ciudad5 + " --> " + ciudadInvertida);
+
+    ciudadInvertida = "";
+    for (let i = ciudad6array.length - 1; i >= 0; i--) {
+        ciudadInvertida = ciudadInvertida + ciudad6array[i];
+    }
+    console.log(ciudad6 + " --> " + ciudadInvertida);
+</script>
